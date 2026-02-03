@@ -5,18 +5,7 @@ Este proyecto implementa un algoritmo de **Caminos Mínimos (Shortest Path)** di
 
 El algoritmo emplea un enfoque iterativo de **relajación tipo Dijkstra** (*Dijkstra-style relaxation*), adaptado para ejecutarse en paralelo mediante el paradigma MapReduce.
 
----
-
-## 📋 Tabla de Contenidos
-- [Descripción del Proyecto](#descripción-del-proyecto)
-- [Arquitectura del Algoritmo](#arquitectura-del-algoritmo)
-- [Requisitos e Instalación](#requisitos-e-instalación)
-- [Estructura del Repositorio](#estructura-del-repositorio)
-- [Ejecución](#ejecución)
-
----
-
-## 📖 Descripción del Proyecto
+## Descripción del Proyecto
 
 El problema consiste en encontrar la ruta más eficiente (menor coste/distancia) en una red de distribución. Dado que las redes logísticas reales pueden ser masivas, se utiliza Spark para procesar el grafo de manera distribuida.
 
@@ -59,16 +48,3 @@ El algoritmo se ejecuta dentro de un bucle que monitoriza la cantidad de nodos a
 Esto garantiza que no se desperdicien recursos computacionales una vez hallados todos los caminos mínimos.
 
 ---
-
-## Requisitos e Instalación
-
-### Prerrequisitos
-* **Python 3.8+**
-* **Java 8 u 11** (Necesario para el entorno de Spark)
-* **Apache Spark**
-
-### Instalación de Librerías
-Ejecuta el siguiente comando para instalar las dependencias de Python:
-
-```bash
-pip install pyspark networkx matplotlib
